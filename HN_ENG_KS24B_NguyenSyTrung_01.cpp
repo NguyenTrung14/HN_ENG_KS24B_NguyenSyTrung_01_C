@@ -107,6 +107,23 @@ int main(){
 				printf("Gia tri cua mang la : %d\t",arr[i]);
 			}
 		    break;
+		case 9:
+			printf("Moi ban nhap so luong phan tu trong mang : ");
+			scanf("%d", &quantity);
+			for(int i=0;i<quantity;i++){
+				printf("Moi ban nhap gia tri thu %d cho mang : ",i+1);
+				scanf("%d", &arr[i]);
+			}
+			for(int i=0;i<quantity;i++){
+				if(arr[i]%2!=0){
+					printf("%d\t",arr[i]);
+				}
+			}
+			for(int i=0;i<quantity;i++){
+				if(arr[i]%2==0){
+					printf("%d\t",arr[i]);
+				}
+			}
 		default:
 			printf("Sai dinh dang ");
 			break;
